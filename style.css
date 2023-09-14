@@ -1141,6 +1141,7 @@ header ion-icon {
         color: gray;
         font-size: 14px;
         padding: 10px;
+        text-align: justify;
     }
     .da img{
         max-width: 50%;
