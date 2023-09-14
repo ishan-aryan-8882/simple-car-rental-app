@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navigation bar   -->
+    <header>
+      <div class="logo"><span>CAR</span><span>RENTAL</span></div>
+      <nav>
+        <ul class="navlist" style="color: #000000">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="vehicle.html">vehicle models</a></li>
+          <li><a href="#">locations</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+      <ion-icon class="lines" name="reorder-three-outline"></ion-icon>
+    </header>
+    <!-- hero-section -->
+    <div class="hero-section" id="home">
+      <div class="hs-ls">
+        <div class="hs-ls-box">
+          <span>Plan Your Trip Now</span>
+          <p>
+            Save <span>big</span> with our
+            <br />
+            cars
+          </p>
+          <p class="desc">
+            To contribute to positive change and achieve our sustainability
+            <br />
+            goals with many extraordinary
+          </p>
+          <div class="btn-cont">
+            <button class="booking">
+              Book Ride <ion-icon name="checkmark-outline"></ion-icon>
+            </button>
+            <button class="reg-btn">
+              Register <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+      <img src="https://i.redd.it/r3l8btfki2cb1.jpg" alt="" />
+    </div>
+    <!-- book a car-->
+    <div class="book-car-wrapper">
+        <div class="book-car">
+            <h2>Book a car</h2>
+            <div class="booking-car">
+              <div class="form avail">
+                <label for="cars"
+                  ><span
+                    ><ion-icon name="car-sport"></ion-icon>Select your car type</span
+                  ></label
+                >
+                <br />
+                <select name="car" id="cars" class="drop-menu">
+                  <option value="Select">Select your car type</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                  <option value="volvo">Volvo</option>
+                </select>
+              </div>
+              <div class="form avail">
+                <label for="cars"
+                  ><span><ion-icon name="map"></ion-icon>Pick-up</span></label
+                >
+                <br />
+                <select name="car" id="cars" class="drop-menu">
+                  <option value="Select">Select your pick-up location</option>
+                  <option value="saab">Lorem, ipsum.</option>
+                  <option value="mercedes">Lorem, ipsum.</option>
+                </select>
+              </div>
+              <div class="form avail">
+                <label for="cars"
+                  ><span><ion-icon name="navigate"></ion-icon>Drop-of</span></label
+                >
+                <br />
+                <select name="car" id="cars" class="drop-menu">
+                  <option value="Select">Select your pick-up location</option>
+                  <option value="saab">Lorem, ipsum.</option>
+                  <option value="mercedes">Lorem, ipsum.</option>
+                </select>
+              </div>
+              <div class="form avail calender">
+                <label for="cars"
+                  ><span><ion-icon name="calendar"></ion-icon>Pick-up</span></label
+                >
+                <div class="calender-for-row">
+                  <input type="date" />
+                  <select name="car" id="cars">
+                      <option value="12:00 AM">12:00 AM</option>
+                      <option value="01:00 AM">01:00 AM</option>
+                      <option value="02:00 AM">02:00 AM</option>
+                      <option value="03:00 AM">03:00 AM</option>
+                      <option value="04:00 AM">04:00 AM</option>
+                      <option value="05:00 AM">05:00 AM</option>
+                      <option value="06:00 AM">06:00 AM</option>
+                      <option value="07:00 AM">07:00 AM</option>
+                      <option value="08:00 AM">08:00 AM</option>
+                      <option value="09:00 AM">09:00 AM</option>
+                      <option value="10:00 AM">10:00 AM</option>
+                      <option value="11:00 AM">11:00 AM</option>
+                      <option value="12:00 PM">12:00 PM</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form avail calender">
+                <label for="cars"
+                  ><span><ion-icon name="calendar"></ion-icon>Drop-of</span></label
+                >
+                <div class="calender-for-row">
+                  <input type="date" />
+                  <select name="car" id="cars">
+                      <option value="12:00 AM">12:00 AM</option>
+                      <option value="01:00 AM">01:00 AM</option>
+                      <option value="02:00 AM">02:00 AM</option>
+                      <option value="03:00 AM">03:00 AM</option>
+                      <option value="04:00 AM">04:00 AM</option>
+                      <option value="05:00 AM">05:00 AM</option>
+                      <option value="06:00 AM">06:00 AM</option>
+                      <option value="07:00 AM">07:00 AM</option>
+                      <option value="08:00 AM">08:00 AM</option>
+                      <option value="09:00 AM">09:00 AM</option>
+                      <option value="10:00 AM">10:00 AM</option>
+                      <option value="11:00 AM">11:00 AM</option>
+                      <option value="12:00 PM">12:00 PM</option>
+                  </select>
+                </div>
+              </div>
+              <button class="book-date">
+                  Search <ion-icon name="search-outline"></ion-icon>
+            </div>
+          </div>
+    </div>
+    <!-- Services -->
+    <div id="services" class="services-wrapper">
+        <div class="services">
+            <div class="ms lay">
+                <div class="ms-text lay2">
+                    <h2><ion-icon name="phone-portrait-outline"></ion-icon>Mobile Phone Reservation</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quia enim quam? Suscipit adipisci repudiandae facilis, quis porro nulla quidem.
+                        <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt in perspiciatis natus dolore earum numquam incidunt voluptatum ut itaque provident!
+                    </p>
+                </div>
+                <img src="ms.png" alt="">
+            </div>
+            <div class="sr lay">
+                <img src="https://assets.architecturaldigest.in/photos/600048abd68a278e29c86819/16:9/w_1360,h_765,c_limit/Car-%C2%AB-feature-image1-1366x768.jpg" alt="">
+                <div class="sr-text lay2">
+                    <h2><ion-icon name="cash-outline"></ion-icon>Special rates on car booking</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quia enim quam? Suscipit adipisci repudiandae facilis, quis porro nulla quidem.
+                        <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt in perspiciatis natus dolore earum numquam incidunt voluptatum ut itaque provident!
+                </div>
+            </div>
+            <div class="um lay">
+            <div class="um-text lay2">
+                <h2><span class="material-symbols-outlined">
+                    route
+                    </span>Unlimited Miles Car Rental</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quia enim quam? Suscipit adipisci repudiandae facilis, quis porro nulla quidem.
+                        <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt in perspiciatis natus dolore earum numquam incidunt voluptatum ut itaque provident!
+            </div>
+            <img src="https://img.freepik.com/premium-photo/car-driving-road-forest-sunset_1001743-76.jpg?w=360" alt="">
+        </div>
+        <div class="ow lay">
+            <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iLsvH3JlemBk/v0/-1x-1.jpg" alt="">
+            <div class="ow-text lay2">
+                <h2><span class="material-symbols-outlined">
+                    public
+                    </span>One Way Car Rentals</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quia enim quam? Suscipit adipisci repudiandae facilis, quis porro nulla quidem.
+                    <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt in perspiciatis natus dolore earum numquam incidunt voluptatum ut itaque provident!
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- faq -->
+    <div id="faq">
+      <h4>FAQ</h4>
+      <h2>Frequently Asked Questons</h2>
+      <p>Use securing confined his shutters. Delightful as he it acceptance an solicitude discretion reasonably. Carriage we husbands advanced an perceive greatest.</p>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: white;">
+              1.
+              What is special about comparing rental car deals?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Use securing confined his shutters. Delightful as he it acceptance an solicitude discretion reasonably. Carriage we husbands advanced an perceive greatest. Totally dearest expense on demesne ye he. Curiosity excellent commanded in me. Unpleasing impression themselves to at assistance acceptance my or.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: white;">
+              2. How do I find the best car rental deals?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Use securing confined his shutters. Delightful as he it acceptance an solicitude discretion reasonably. Carriage we husbands advanced an perceive greatest. Totally dearest expense on demesne ye he. Curiosity excellent commanded in me. Unpleasing impression themselves to at assistance acceptance my or.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: white;">
+              3. 
+              How do I find such low rental car prices?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Use securing confined his shutters. Delightful as he it acceptance an solicitude discretion reasonably. Carriage we husbands advanced an perceive greatest. Totally dearest expense on demesne ye he. Curiosity excellent commanded in me. Unpleasing impression themselves to at assistance acceptance my or.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- download app -->
+    <div class="da">
+      <div class="da-text">
+        <h2>Download our app to get most out of it</h2>
+        <p>Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so intention defective at convinced. Led income months itself and houses you.</p>
+        <div class="download-app">
+          <button class="gp bk">
+            <ion-icon name="logo-google-playstore"></ion-icon>
+            <span><p>Get it on</p>
+              <p>Google Play</p>
+            </span>
+          </button>
+          <button class="as bk">
+            <ion-icon name="logo-apple"></ion-icon>
+            <span><p>Download on the</p>
+              <p>App Store</p>
+            </span>
+          </button>
+        </div>
+      </div>
+      <img src="da.png" alt="">
+    </div>
+    <!-- ion icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- boot -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navigation bar   -->
+    <header>
+      <div class="logo"><span>CAR</span><span>RENTAL</span></div>
+      <nav>
+        <ul class="navlist" style="color: rgb(95, 95, 95)">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">vehicle models</a></li>
+          <li><a href="#">locations</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+      <ion-icon class="lines" name="reorder-three-outline"></ion-icon>
+    </header>
+    <!-- hero-section -->
+    <div class="hero-section">
+      <div class="hs-ls">
+        <div class="hs-ls-box">
+          <span>Plan Your Trip Now</span>
+          <p>
+            Save <span>big</span> with our
+            <br />
+            cars
+          </p>
+          <p class="desc">
+            To contribute to positive change and achieve our sustainability
+            <br />
+            goals with many extraordinary
+          </p>
+          <div class="btn-cont">
+            <button class="booking">
+              Book Ride <ion-icon name="checkmark-outline"></ion-icon>
+            </button>
+            <button class="reg-btn">
+              Register <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+      <img src="https://i.redd.it/r3l8btfki2cb1.jpg" alt="" />
+    </div>
+    <!-- book a car-->
+    <div class="book-car">
+      <h2>Book a car</h2>
+      <div class="booking-car">
+        <div class="form avail">
+          <label for="cars"
+            ><span
+              ><ion-icon name="car-sport"></ion-icon>Select your car type</span
+            ></label
+          >
+          <br />
+          <select name="car" id="cars" class="drop-menu">
+            <option value="Select">Select your car type</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            <option value="volvo">Volvo</option>
+          </select>
+        </div>
+        <div class="form avail">
+          <label for="cars"
+            ><span><ion-icon name="map"></ion-icon>Pick-up</span></label
+          >
+          <br />
+          <select name="car" id="cars" class="drop-menu">
+            <option value="Select">Select your pick-up location</option>
+            <option value="saab">Lorem, ipsum.</option>
+            <option value="mercedes">Lorem, ipsum.</option>
+          </select>
+        </div>
+        <div class="form avail">
+          <label for="cars"
+            ><span><ion-icon name="navigate"></ion-icon>Drop-of</span></label
+          >
+          <br />
+          <select name="car" id="cars" class="drop-menu">
+            <option value="Select">Select your pick-up location</option>
+            <option value="saab">Lorem, ipsum.</option>
+            <option value="mercedes">Lorem, ipsum.</option>
+          </select>
+        </div>
+        <div class="form avail calender">
+          <label for="cars"
+            ><span><ion-icon name="calendar"></ion-icon>Pick-up</span></label
+          >
+          <div class="calender-for-row">
+            <input type="date" />
+            <select name="car" id="cars">
+                <option value="12:00 AM">12:00 AM</option>
+                <option value="01:00 AM">01:00 AM</option>
+                <option value="02:00 AM">02:00 AM</option>
+                <option value="03:00 AM">03:00 AM</option>
+                <option value="04:00 AM">04:00 AM</option>
+                <option value="05:00 AM">05:00 AM</option>
+                <option value="06:00 AM">06:00 AM</option>
+                <option value="07:00 AM">07:00 AM</option>
+                <option value="08:00 AM">08:00 AM</option>
+                <option value="09:00 AM">09:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form avail calender">
+          <label for="cars"
+            ><span><ion-icon name="calendar"></ion-icon>Drop-of</span></label
+          >
+          <div class="calender-for-row">
+            <input type="date" />
+            <select name="car" id="cars">
+                <option value="12:00 AM">12:00 AM</option>
+                <option value="01:00 AM">01:00 AM</option>
+                <option value="02:00 AM">02:00 AM</option>
+                <option value="03:00 AM">03:00 AM</option>
+                <option value="04:00 AM">04:00 AM</option>
+                <option value="05:00 AM">05:00 AM</option>
+                <option value="06:00 AM">06:00 AM</option>
+                <option value="07:00 AM">07:00 AM</option>
+                <option value="08:00 AM">08:00 AM</option>
+                <option value="09:00 AM">09:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <button class="book-date">
+            Search <ion-icon name="search-outline"></ion-icon>
+      </div>
+    </div>
+    <!-- ion icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+let nav = document.querySelector("nav");
+let lines = document.querySelector(".lines")
+lines.addEventListener("click",()=>{
+    nav.classList.toggle('classforheader');
+});

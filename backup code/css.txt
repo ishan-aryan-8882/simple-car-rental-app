@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Abel', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    z-index: 9;
+}
+
+.logo span {
+    font-size: 25px;
+    position: relative;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+}
+
+.logo span:nth-child(1)::after {
+    content: '|';
+    color: #FD662F;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    background: rgb(255, 255, 255);
+}
+
+.navlist {
+    margin: auto 0;
+}
+
+.navlist li {
+    list-style: none;
+    display: inline-block;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.navlist li:hover {
+    color: #FD662F;
+}
+
+.navlist li a {
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+header ion-icon {
+    margin: auto 0;
+    font-size: 30px;
+    color: gray;
+    display: none;
+}
+
+.classforheader {
+    top: 100%;
+    transform: scale(1);
+}
+
+@media (max-width:876px) {
+    header ion-icon {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        transform: scale(0);
+        z-index: 999;
+        transition: 0.4s;
+    }
+
+    nav::before {
+        position: absolute;
+        content: '';
+        background-color: rgb(255, 255, 255);
+        inset: 0;
+    }
+
+    .navlist {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        padding: 10px;
+    }
+
+    .navlist li {
+        padding: 10px;
+        z-index: 9;
+    }
+}
+
+.hero-section {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    gap: 20px;
+    position: relative;
+    /* border: 2px solid black; */
+    padding: 20px 0;
+}
+
+.hs-ls {
+    flex: 0 1 40%;
+    /* border: 2px solid black; */
+    /* z-index: -1; */
+}
+
+.hs-ls-box>* {
+    font-family: 'Rubik', sans-serif;
+    animation: appear1 0.6s forwards;
+    transform: translateX(-100%);
+}
+
+.hs-ls-box span {
+    animation-delay: 0s;
+}
+
+.hs-ls-box p {
+    animation-delay: 0.1s;
+}
+
+.hs-ls-box .desc {
+    animation-delay: 0.25s;
+}
+
+.hs-ls-box .btn-cont {
+    animation-delay: 0.3s;
+}
+
+
+.hs-ls-box {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* overflow: hidden; */
+    padding: 10px 0;
+}
+
+.hs-ls-box>* {
+    transform: translateX(-200%);
+}
+
+.hero-section img {
+    max-width: 40%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    aspect-ratio: 16 / 16;
+    object-position: top;
+    animation: appear2 1s forwards;
+    margin: auto 0;
+    padding: 10px;
+}
+
+@keyframes appear2 {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes appear1 {
+    from {
+        transform: translateX(-500%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.hs-ls-box span {
+    font-weight: 300;
+    font-size: 18px;
+    color: gray;
+}
+
+.hs-ls-box p {
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.hs-ls-box p span {
+    color: #FD662F;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.hs-ls-box .desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: #817F91;
+}
+
+.btn-cont {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-cont button {
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #FD662F, #fb875c);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    width: fit-content;
+}
+
+.btn-cont ion-icon {
+    border-radius: 50%;
+    color: inherit;
+    background: white;
+    margin: auto 0;
+    color: #FD662F;
+    padding: 2px;
+    font-size: 12px;
+}
+
+.reg-btn ion-icon {
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    margin: auto 0;
+    font-size: 12px;
+    background: transparent;
+    font-size: 15px;
+}
+
+.hero-section .btn-cont button:nth-child(1) {
+    /* box-shadow: 0 0 10px #ffb5a18e; */
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+}
+
+.hero-section .btn-cont button:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.17), white, rgba(255, 255, 255, 0.17));
+    width: 80%;
+    height: 200%;
+    z-index: -1;
+    transform: translateX(-150%);
+    transition: 1s;
+}
+
+.hero-section .btn-cont button:nth-child(1):hover:after {
+    transform: translateX(280%);
+}
+
+
+.btn-cont button:nth-child(2) {
+    background: black;
+    transition: 0.3s;
+}
+
+.btn-cont button:nth-child(2):hover {
+    border: none;
+    background: none;
+    box-shadow: 0 0 2px #FD662F;
+    color: #FD662F;
+}
+
+.btn-cont button:nth-child(2):hover ion-icon {
+    color: #FD662F;
+}
+
+@media (max-width:1209px) {
+
+    .hs-ls-box .desc {
+        font-size: 14px;
+    }
+
+    .btn-cont button {
+        font-size: 14px;
+    }
+
+    .hs-ls-box {
+        padding: 20px;
+    }
+
+    .hs-ls-box p {
+        font-weight: 700;
+        font-size: 42px;
+    }
+
+    .hero-section img {
+        max-width: 50%;
+    }
+}
+
+@media (max-width:1043px) {
+    .hs-ls {
+        flex: 0 1 60%;
+        text-align: left;
+    }
+}
+
+@media (max-width:876px) {
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .hs-ls-box {
+        flex: 0 1 100%;
+        text-align: center;
+    }
+
+    .hero-section img {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .btn-cont {
+        justify-content: center;
+    }
+}
+
+.book-car {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.181);
+    animation: appear3 1s forwards;
+    animation-delay: 0.8s;
+    transform: scale(0);
+}
+
+@keyframes appear3 {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.booking-car {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.avail {
+    flex: 0 1 30%;
+    /* border: 2px solid black; */
+    margin-bottom: 40px;
+}
+
+.avail select {
+    border: none;
+    outline: none;
+    padding: 15px;
+    background: white;
+    border: 1px solid rgb(228, 228, 228);
+    color: gray;
+    width: 100%;
+}
+
+.avail label span {
+    display: flex;
+    /* border: 2px solid black; */
+    width: 100%;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+    font-weight: 700;
+}
+
+.avail label span ion-icon {
+    font-size: 25px;
+    color: #FD662F;
+}
+
+.avail select option {
+    font-size: 14px;
+}
+
+.form.avail.calender {
+    display: flex;
+    width: fit-content;
+    /* border: 2px solid black; */
+    flex-direction: column;
+    flex: 0 1 40%;
+    gap: 10px;
+}
+
+.calender-for-row {
+    display: flex;
+    gap: 5px;
+}
+
+.calender-for-row input {
+    flex: 0 1 55%;
+    color: gray;
+    border: 1px solid rgb(228, 228, 228);
+    padding: 10px;
+}
+
+.calender-for-row select {
+    flex: 0 1 35%;
+}
+
+.book-car button {
+    width: fit-content;
+    padding: 10px 20px;
+    margin: auto 0;
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, #FD662F, #ff8559);
+    border-radius: 40px;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.book-car button::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.17), white, rgba(255, 255, 255, 0.17));
+    width: 80%;
+    height: 200%;
+    z-index: -1;
+    transform: translateX(-150%);
+    transition: 1s;
+}
+
+.book-car button:hover::after {
+    transform: translateX(200%);
+}
+
+@media (max-width:1134px) {
+    .book-car h2{
+        text-align: center;
+    }
+
+    .booking-car .avail:nth-child(1) {
+        flex: 0 1 100%;
+    }
+
+    .booking-car .avail:nth-child(2), .booking-car .avail:nth-child(3) {
+        flex: 0 1 49%;
+    }
+
+    .form.avail.calender {
+        flex: 0 1 100%;
+    }
+
+    .book-date {
+        flex: 0 1 100%;
+    }
+}
+
+@media (max-width:800px) {
+    .booking-car .avail:nth-child(1) {
+        flex: 0 1 100%;
+    }
+
+    .booking-car .avail:nth-child(2), .booking-car .avail:nth-child(3) {
+        flex: 0 1 100%;
+    }
+
+    .form.avail.calender {
+        flex: 0 1 100%;
+    }
+
+    .book-date {
+        flex: 0 1 100%;
+    }
+}
+
+@media (max-width:530px) {
+    .calender-for-row{
+        flex-direction: column;
+    }
+}
