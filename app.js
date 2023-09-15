@@ -24,8 +24,11 @@ const addClassWhenNear = (selector, className, distance) => {
 };
 
 addClassWhenNear(".ms", "showup", 5);
+
 addClassWhenNear(".sr", "showup", 5);
+
 addClassWhenNear(".um", "showup", 5);
+
 addClassWhenNear(".ow", "showup", 5);
 
 let logo = document.querySelector(".logo");
