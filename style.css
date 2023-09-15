@@ -1035,7 +1035,7 @@ header ion-icon {
     border-radius: 15px;
 }
 
-@media (max-width:1000px) {
+@media (max-width:1000px) { 
     .accordion {
         width: 100%;
     }
