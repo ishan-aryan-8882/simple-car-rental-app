@@ -32,3 +32,30 @@ let logo = document.querySelector(".logo");
 logo.style.transform = "translateY(0%)";
 
 
+let faqwrap = document.querySelector(".faq-wrap");
+let faq = document.querySelector("#faq");
+
+window.addEventListener('scroll',()=>{
+  let rect = faqwrap.getBoundingClientRect();
+  if(rect.top < window.innerHeight){
+    faq.classList.add("da-an");
+  }
+  else{
+    faq.classList.remove("da-an");
+  }
+})
+
+
+
+let daWrap = document.querySelector('.da-wrapper');
+let da = document.querySelector('.da');
+
+window.addEventListener('scroll', () => {
+  let rect = daWrap.getBoundingClientRect();
+  if (rect.top < window.innerHeight) {
+    da.classList.add("da-an");
+  }
+  else{
+    da.classList.remove("da-an");
+  }
+});
